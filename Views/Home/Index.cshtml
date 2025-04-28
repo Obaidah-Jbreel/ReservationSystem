@@ -1,8 +1,65 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Reservation System";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container hero-section">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4">Welcome to the Reservation System</h1>
+            <p class="lead">Easily manage and book your reservations with us. Whether you're making a booking or managing your current reservations, everything is at your fingertips!</p>
+
+            <div class="d-flex justify-content-center">
+                <a href="@Url.Action("Register", "Auth")" class="btn btn-primary btn-custom">Create Account</a>
+                <a href="@Url.Action("Login", "Auth")" class="btn btn-secondary btn-custom ms-3">Login</a>
+            </div>
+
+            <hr class="my-4" />
+
+            <h3>How it Works</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Create an account or login.</li>
+                <li class="list-group-item">Make a reservation for your desired dates.</li>
+                <li class="list-group-item">Manage your reservations anytime.</li>
+            </ul>
+        </div>
+    </div>
 </div>
+
+<!-- Footer -->
+<div class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Reservation System. All rights reserved.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
