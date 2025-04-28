@@ -1,0 +1,8 @@
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.AssemblyInfoInputs.cache
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.AssemblyInfo.cs
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.csproj.CoreCompileInputs.cache
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.RazorAssemblyInfo.cache
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.RazorAssemblyInfo.cs
+C:\Users\Businuss\gsg_course\ReservationSystem\obj\Debug\net6.0\ReservationSystem.sourcelink.json

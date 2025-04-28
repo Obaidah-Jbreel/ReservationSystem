@@ -1,0 +1,73 @@
+
+@{
+    ViewData["Title"] = "Dashboard - Welcome";
+}
+
+<h2 class="text-center">Welcome, @ViewBag.Username!</h2>
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <p>You are successfully logged in. Welcome to your booking dashboard.</p>
+    </div>
+
+    <div class="row">
+        <!-- Dashboard Widgets -->
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Total Bookings</div>
+                <div class="card-body">
+                    <h5 class="card-title">50</h5> <!-- Example static number for total bookings -->
+                    <p class="card-text">Total number of bookings made so far.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Upcoming Bookings</div>
+                <div class="card-body">
+                    <h5 class="card-title">10</h5> <!-- Example static number for upcoming bookings -->
+                    <p class="card-text">Bookings that are scheduled for the next week.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Bookings Pending Approval</div>
+                <div class="card-body">
+                    <h5 class="card-title">5</h5> <!-- Example static number for pending bookings -->
+                    <p class="card-text">Bookings waiting for approval.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Quick Actions -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Quick Actions</div>
+                <div class="card-body">
+                    <a href="@Url.Action("NewBooking", "Booking")" class="btn btn-primary w-100 mb-3">Create New Booking</a>
+                    <a href="@Url.Action("ViewBookings", "Booking")" class="btn btn-secondary w-100">View All Bookings</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">Latest Bookings</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Booking 1 - <span class="badge bg-success">Confirmed</span></li>
+                        <li class="list-group-item">Booking 2 - <span class="badge bg-warning">Pending</span></li>
+                        <li class="list-group-item">Booking 3 - <span class="badge bg-danger">Canceled</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="@Url.Action("Logout", "Auth")" class="btn btn-danger mt-4">Logout</a>
+</div>

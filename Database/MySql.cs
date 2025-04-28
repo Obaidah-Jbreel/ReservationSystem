@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ReservationSystem.Models;
-namespace Database
+
+namespace ReservationSystem.Database 
 {
   public class AppDbContext : DbContext
   {
